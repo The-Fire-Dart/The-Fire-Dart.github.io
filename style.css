@@ -348,12 +348,13 @@ p strong {
 .facts {
     display: flex;
     flex-direction: column;
-    justify-content: right;
     gap: 40px;
-    padding: 60px;
+    padding: 40px;
     position: absolute;
     top: 332px;
     right: 50px;
+
+    max-width: 250px;
 }
 
 .fact {
@@ -856,6 +857,30 @@ nav ul {
 
 .about-hero p {
     line-height: 1.6;
+}
+
+}
+
+@media (max-width: 900px) {
+
+.facts {
+    position: static;   /* entfernt absolute Position */
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.fact {
+    width: 40%;
+}
+
+}
+
+@media (max-width: 500px) {
+
+.fact {
+    width: 100%;
 }
 
 }
