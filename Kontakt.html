@@ -43,23 +43,44 @@
         </div>
 
         <div class="contact-form">
-            <h2> direkte Nachricht senden</h2>
+    <h2>Direkte Nachricht senden</h2>
 
-            <form action="https://formspree.io/f/xjgewykj" 
-        method="POST">
+    <form id="contact-form" action="https://formspree.io/f/xjgewykj" method="POST">
 
-                <input type="text" name="name" placeholder="Ihr Name" required>
+        <input type="text" name="name" placeholder="Ihr Name" required>
+        <input type="email" name="email" placeholder="Ihre Email" required>
+        <textarea name="message" placeholder="Ihre Nachricht" rows="6" required></textarea>
 
-                <input type="email" name="email" placeholder="Ihre Email" required>
+        <button type="submit">abschicken</button>
 
-                <textarea name="message" placeholder="Ihre Nachricht" rows="6" required></textarea>
+    </form>
+</div>
 
-                <input type="hidden" name="_next" value="https://the-fire-dart.github.io/Danke.html">
+<!-- JS für Weiterleitung nach erfolgreichem Absenden -->
+<script>
+const form = document.getElementById('contact-form');
 
-                <button type="submit">Nachricht senden</button>
+form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Stoppt das Standardformular
 
-            </form>
-        </div>
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+    }).then(response => {
+        if (response.ok) {
+            // Erfolgreich gesendet → Weiterleitung
+            window.location.href = 'https://the-fire-dart.github.io/Danke.html';
+        } else {
+            alert("Fehler beim Senden. Bitte versuchen Sie es erneut.");
+        }
+    }).catch(error => {
+        alert("Fehler beim Senden. Bitte versuchen Sie es erneut.");
+    });
+});
+</script>
 
     </div>
 </section>
