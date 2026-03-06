@@ -268,7 +268,7 @@ nav a:hover {
 .about-hero {
     font-family: 'Russo One', sans-serif;
     letter-spacing: 2px;
-    padding: 50px 20px;
+    padding: 60px 20px;
     text-align: center;
     font-size: 20px;
     background: linear-gradient(
@@ -841,5 +841,6 @@ nav ul {
 .stats-grid {
     grid-template-columns: repeat(2, 1fr);
 }
+
 
 }
