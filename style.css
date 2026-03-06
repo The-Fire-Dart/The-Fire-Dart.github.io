@@ -847,3 +847,15 @@ nav ul {
 
 }
 
+@media (max-width: 700px) {
+
+.about-hero {
+    padding: 40px 15px;
+    font-size: 16px;
+}
+
+.about-hero p {
+    line-height: 1.6;
+}
+
+}
