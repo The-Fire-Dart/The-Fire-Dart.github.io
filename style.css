@@ -348,8 +348,9 @@ p strong {
 .facts {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     gap: 40px;
-    padding: 40px;
+    padding: 60px;
     position: absolute;
     top: 332px;
     right: 50px;
@@ -884,3 +885,4 @@ nav ul {
 }
 
 }
+
