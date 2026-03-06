@@ -794,3 +794,52 @@ p strong {
     text-decoration: none;
     transition: 0.3s;
 }
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+nav ul {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.about-hero {
+    padding: 40px 15px;
+    font-size: 16px;
+}
+
+.gallery-grid {
+    grid-template-columns: 1fr;
+}
+
+.stats-grid {
+    grid-template-columns: 1fr;
+}
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+.gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
