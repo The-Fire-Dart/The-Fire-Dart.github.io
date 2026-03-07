@@ -880,6 +880,12 @@ nav ul {
     width: 40%;
 }
 
+.vm-stats-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 30px auto;
+}
+
 }
 
 @media (max-width: 500px) {
@@ -888,6 +894,18 @@ nav ul {
     width: 100%;
 }
 
+.vm-stats-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin: 20px auto;
 }
+
+.vm-stat-box {
+    height: auto;
+    padding: 15px;
+}
+    
+}
+
 
 
