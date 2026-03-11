@@ -877,6 +877,8 @@ nav ul {
     justify-content: center;
     flex-wrap: wrap;
     padding: 40px 20px;
+
+    margin-top: 60px;
 }
 
 .fact {
@@ -916,3 +918,4 @@ nav ul {
         overflow-x: auto;
     }
 }
+
