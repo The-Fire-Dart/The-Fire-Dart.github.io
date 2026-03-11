@@ -872,17 +872,20 @@ nav ul {
 @media (max-width: 900px) {
 
 .facts {
-    position: static;   /* entfernt absolute Position */
+    position: relative;
+    top: auto;
+    right: auto;
+    
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 40px 20px;
-
-    margin-top: 60px;
+    
+    padding: 20px;
+    margin-top: 80px;
 }
 
 .fact {
-    width: 40%;
+    width: 45%;
 }
 
 .vm-stats-container {
@@ -918,4 +921,5 @@ nav ul {
         overflow-x: auto;
     }
 }
+
 
