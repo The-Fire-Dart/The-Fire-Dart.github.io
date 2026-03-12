@@ -294,7 +294,7 @@ nav a:hover {
 .about-container {
     display: flex;
     justify-content: space-between;
-    gap: 80px;
+    gap: 20px;
     align-items: flex-start;
 }
 
@@ -357,7 +357,9 @@ p strong {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-left: -40px;
+
+    width: 220px;
+    align-items: flex-start;
 }
 
 .fact {
@@ -916,6 +918,7 @@ nav ul {
         overflow-x: auto;
     }
 }
+
 
 
 
