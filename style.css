@@ -876,6 +876,9 @@ nav ul {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+
+    margin-top: 60px;
+    padding: 20px;
 }
 
 .fact {
@@ -915,6 +918,7 @@ nav ul {
         overflow-x: auto;
     }
 }
+
 
 
 
