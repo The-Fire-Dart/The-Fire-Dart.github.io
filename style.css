@@ -872,12 +872,16 @@ nav ul {
 @media (max-width: 900px) {
 
 .facts {
-    position: static;
+    position: relative;
+    top: auto;
+    right: auto;
+    
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
 
-    margin-top: 60px;
+    max-width: 600px; 
+    margin-top: 80px auto 0 auto;
     padding: 20px;
 }
 
@@ -918,6 +922,7 @@ nav ul {
         overflow-x: auto;
     }
 }
+
 
 
 
