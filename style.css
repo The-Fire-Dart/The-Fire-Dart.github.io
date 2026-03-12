@@ -357,7 +357,7 @@ p strong {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-left: -40px;
+    margin-left: -60px;
 }
 
 .fact {
@@ -916,6 +916,7 @@ nav ul {
         overflow-x: auto;
     }
 }
+
 
 
 
