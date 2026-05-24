@@ -333,7 +333,7 @@ nav a:hover {
 }
 
 .highlight-name {
-    font-family: 'Black Fire', sans-serif;
+    font-family: 'BlackFire', sans-serif;
     font-size: 2.5rem;
     background: linear-gradient(90deg, #fff200, #ff7a00, #ff1a00);
     -webkit-background-clip: text;
